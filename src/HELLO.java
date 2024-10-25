@@ -1,11 +1,16 @@
+import java.util.Scanner;
 public class HELLO {
     public static void main(String[] args) {
-        int w = 5;
-        int x = 10;
-        if(x > w){
-            System.out.println(x + " is greater ");
+        Scanner scan = new Scanner(System.in);
+        System.out.println("Type a number: ");
+        int one = scan.nextInt();
+        System.out.print("Type a second number: ");
+        int two = scan.nextInt();
+
+        if(one > two){
+            System.out.println(one + " is greater ");
         } else {
-            System.out.println(w + "is greater ");
+            System.out.println(two + "is greater ");
         }
     }
 }
